@@ -11,7 +11,11 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void validatePassword() throws Exception {
+        Password password = new Password("password");
+        assertFalse(password.validate());
+
+        password.text = "2short";
+        assertFalse(password.validate());
     }
 }
