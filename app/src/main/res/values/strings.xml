@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Password Validator</string>
+    <string name="strongPassMsg">Super strong bro.</string>
+    <string name="weakPassMsg">Man that\'s weak sauce.</string>
 </resources>
